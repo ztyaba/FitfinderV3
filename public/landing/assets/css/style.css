@@ -2704,6 +2704,24 @@ ul.home_banner_tabs li.active .home_banner_tabs_title_area {
 .we_offer_box:hover .we_offer_icon svg g path {
     fill: #FF640D;
 }
+.we_offer_icon img {
+    width: clamp(120px, 13vw, 160px);
+    height: clamp(120px, 13vw, 160px);
+    object-fit: contain;
+    border-radius: 16px;
+    display: inline-block;
+    box-shadow: 0 0 0 3px rgba(20, 119, 255, 0.35), 0 0 25px 8px rgba(20, 119, 255, 0.25);
+    animation: blueGlow 3s ease-in-out infinite;
+}
+@keyframes blueGlow {
+    0%,
+    100% {
+        box-shadow: 0 0 0 3px rgba(20, 119, 255, 0.35), 0 0 25px 8px rgba(20, 119, 255, 0.25);
+    }
+    50% {
+        box-shadow: 0 0 0 5px rgba(20, 119, 255, 0.45), 0 0 35px 14px rgba(20, 119, 255, 0.35);
+    }
+}
 .we_offer_info p,
 .progress_step_info p,
 .footer_logo_area p,
