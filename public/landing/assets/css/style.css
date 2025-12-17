@@ -2705,8 +2705,8 @@ ul.home_banner_tabs li.active .home_banner_tabs_title_area {
     fill: #FF640D;
 }
 .we_offer_icon img {
-    width: clamp(120px, 13vw, 160px);
-    height: clamp(120px, 13vw, 160px);
+    width: clamp(140px, 15vw, 180px);
+    height: clamp(140px, 15vw, 180px);
     object-fit: contain;
     border-radius: 16px;
     display: inline-block;
