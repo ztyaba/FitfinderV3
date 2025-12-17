@@ -110,13 +110,25 @@ $(".close").click(function (event) {
 
 /* ------------------------------------- counter ------------------------------------- */
 const stats = document.querySelectorAll(".counter");
+const counterState = new WeakMap();
+const counterDelay = 1000;
+
+const animateTicks = (ticks) => {
+  ticks.forEach((tick) => {
+    const dist = parseInt(tick.getAttribute("data-value")) + 1;
+    tick.style.transform = `translateY(-${dist * 100}%)`;
+  });
+};
+
+const resetTicks = (ticks) => {
+  ticks.forEach((tick) => {
+    tick.style.transform = "translateY(0)";
+  });
+};
 
 stats.forEach((stat) => {
   const patt = /(\D+)?(\d+)(\D+)?(\d+)?(\D+)?/;
-  const time = 1000;
   let result = [...patt.exec(stat.textContent)];
-  let fresh = true;
-  let ticks;
 
   result.shift();
   result = result.filter((res) => res != null);
@@ -149,32 +161,35 @@ stats.forEach((stat) => {
     }
   }
 
-  ticks = [...stat.querySelectorAll("span[data-value]")];
-
-  let activate = () => {
-    let top = stat.getBoundingClientRect().top;
-    let offset = window.innerHeight * 1;
-
-    setTimeout(() => {
-      fresh = false;
-    }, time);
-
-    if (top < offset) {
-      setTimeout(
-        () => {
-          for (let tick of ticks) {
-            let dist = parseInt(tick.getAttribute("data-value")) + 1;
-            tick.style.transform = `translateY(-${dist * 100}%)`;
-          }
-        },
-        fresh ? time : 0
-      );
-      window.removeEventListener("scroll", activate);
-    }
-  };
-  window.addEventListener("scroll", activate);
-  activate();
+  const ticks = [...stat.querySelectorAll("span[data-value]")];
+  resetTicks(ticks);
+  counterState.set(stat, { ticks, isFirst: true, timer: null });
 });
+
+const counterObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      const state = counterState.get(entry.target);
+      if (!state) return;
+
+      if (state.timer) {
+        clearTimeout(state.timer);
+        state.timer = null;
+      }
+
+      if (entry.isIntersecting) {
+        const delay = state.isFirst ? counterDelay : 0;
+        state.isFirst = false;
+        state.timer = setTimeout(() => animateTicks(state.ticks), delay);
+      } else {
+        resetTicks(state.ticks);
+      }
+    });
+  },
+  { threshold: 0.35 }
+);
+
+stats.forEach((stat) => counterObserver.observe(stat));
 /* ------------------------------------- FAQ Accodian ------------------------------------- */
 $(document).ready(function () {
   $(".faq_accodian_title").click(function () {
