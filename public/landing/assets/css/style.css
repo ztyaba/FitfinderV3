@@ -2674,6 +2674,12 @@ a.orange_btn.white_btn span.orenge_icon::before,
         font-size: clamp(34px, 8vw, 46px);
     }
 
+    .hero_kicker,
+    .hero_headline,
+    .hero_subtext {
+        display: none;
+    }
+
     .hero_video_frame {
         position: absolute;
         inset: 0;
