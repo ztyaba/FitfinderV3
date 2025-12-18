@@ -2716,25 +2716,6 @@ a.orange_btn.white_btn span.orenge_icon::before,
         z-index: 2;
     }
 
-    .hero_text_block {
-        flex: 1;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 0;
-        padding-bottom: 24px;
-    }
-
-    .slider_button {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        margin-top: auto;
-        padding-bottom: 12px;
-    }
-
     .hero_media {
         position: absolute;
         inset: 0;
@@ -2982,6 +2963,10 @@ ul.home_banner_tabs li.active .home_banner_tabs_title_area {
     display: inline-block;
     box-shadow: 0 0 0 3px rgba(20, 119, 255, 0.35), 0 0 25px 8px rgba(20, 119, 255, 0.25);
     animation: blueGlow 3s ease-in-out infinite;
+}
+.ai-form-icon {
+    width: 160px;
+    height: 160px;
 }
 @keyframes blueGlow {
     0%,
