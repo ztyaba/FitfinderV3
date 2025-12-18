@@ -2660,19 +2660,97 @@ a.orange_btn.white_btn span.orenge_icon::before,
 
 @media (max-width: 768px) {
     .banner_slider_content {
-        top: 52%;
-        max-width: min(680px, 100%);
-        padding-inline: 20px;
-        padding-top: 12px;
+        position: relative;
+        top: 0;
+        transform: none;
+        max-width: 100%;
+        padding: 96px 20px 28px;
+        height: 100vh;
+        display: flex;
+        align-items: stretch;
     }
 
     .hero_headline {
         font-size: clamp(34px, 8vw, 46px);
     }
 
+    .hero_kicker,
+    .hero_headline,
+    .hero_subtext {
+        display: none;
+    }
+
     .hero_video_frame {
-        max-width: 360px;
-        margin-inline: auto;
+        position: absolute;
+        inset: 0;
+        max-width: none;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        animation: none;
+    }
+
+    .hero_video_inner {
+        inset: 0;
+        border-radius: 0;
+    }
+
+    .hero_video {
+        filter: brightness(0.6);
+    }
+
+    .hero_layout {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+        padding: 0;
+        z-index: 1;
+    }
+
+    .hero_text_block,
+    .slider_button {
+        position: relative;
+        z-index: 2;
+    }
+
+    .hero_text_block {
+        flex: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0;
+        padding-bottom: 24px;
+    }
+
+    .slider_button {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: auto;
+        padding-bottom: 12px;
+    }
+
+    .hero_media {
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+    }
+
+    .hero_media::before {
+        inset: 0;
+        background: linear-gradient(180deg, rgba(8, 12, 16, 0.55) 0%, rgba(8, 12, 16, 0.7) 100%);
+        opacity: 1;
+        filter: none;
+    }
+
+    .video_mute_toggle,
+    .hero_vertical_label {
+        display: none;
     }
 }
 /* Home_Banner_2 */
