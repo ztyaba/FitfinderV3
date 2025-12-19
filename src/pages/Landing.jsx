@@ -8,7 +8,7 @@ export default function Landing() {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-slate-950 text-slate-100">
-      <p className="text-sm font-medium">Redirecting to the new FitFinder landing experience...</p>
+      <p className="text-sm font-medium">Redirecting to the new FitFindr landing experience...</p>
     </div>
   )
 }
