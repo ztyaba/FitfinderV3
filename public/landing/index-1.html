@@ -1889,6 +1889,116 @@
         })
     </script>
 
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const blogCards = Array.from(document.querySelectorAll(".blog_home_v1"))
+            if (!blogCards.length) return
+
+            const feeds = [
+                "https://www.nerdfitness.com/feed/",
+                "https://athletechnews.com/category/tech/feed/",
+                "https://blog.myfitnesspal.com/feed/",
+            ]
+
+            const fetchFeed = async (url) => {
+                const proxiedUrl = `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`
+                try {
+                    const response = await fetch(proxiedUrl)
+                    if (response.ok) return response.text()
+                } catch (error) {
+                    console.warn("Proxy feed fetch failed, retrying direct:", error)
+                }
+
+                const fallbackResponse = await fetch(url)
+                if (!fallbackResponse.ok) throw new Error(`Unable to fetch feed: ${url}`)
+                return fallbackResponse.text()
+            }
+
+            const extractImage = (item) => {
+                const mediaContent = item.querySelector("media\\:content") || item.querySelector("content\\:encoded media\\:content")
+                if (mediaContent?.getAttribute("url")) return mediaContent.getAttribute("url")
+
+                const enclosure = item.querySelector("enclosure")
+                const enclosureUrl = enclosure?.getAttribute("url")
+                if (enclosureUrl && (enclosure.getAttribute("type") || "").startsWith("image")) return enclosureUrl
+
+                const contentNode = item.getElementsByTagName("content:encoded")[0]
+                const descriptionNode = item.querySelector("description")
+                const html = contentNode?.textContent || descriptionNode?.textContent || ""
+                const imageMatch = html.match(/<img[^>]+src=["']([^"']+)["']/i)
+                return imageMatch ? imageMatch[1] : ""
+            }
+
+            const extractText = (item, tag) => {
+                const node = item.getElementsByTagName(tag)[0] || item.querySelector(tag)
+                return node?.textContent?.trim() || ""
+            }
+
+            const formatDate = (value) => {
+                const parsedDate = new Date(value)
+                if (Number.isNaN(parsedDate.getTime())) return ""
+                return parsedDate.toLocaleDateString("en-US", {
+                    month: "short",
+                    day: "2-digit",
+                    year: "numeric",
+                }).toUpperCase()
+            }
+
+            const buildExcerpt = (rawHtml) => {
+                if (!rawHtml) return ""
+                const stripped = rawHtml.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim()
+                return stripped.length > 180 ? `${stripped.slice(0, 177).trim()}...` : stripped
+            }
+
+            const updateCard = (card, article) => {
+                if (!article) return
+
+                const imageEl = card.querySelector(".home_blog_img img")
+                const titleLink = card.querySelector(".home_blog_detail h4 a")
+                const dateEl = card.querySelector(".home_blog_detail .line_height_20")
+                const excerptEl = card.querySelector(".home_blog_detail .line_height_30")
+                const primaryLink = card.querySelector(".home_blog_btn")
+
+                if (article.image && imageEl) imageEl.setAttribute("src", article.image)
+                if (article.title && titleLink) titleLink.textContent = article.title
+                if (article.date && dateEl) dateEl.textContent = article.date
+                if (article.link) {
+                    if (titleLink) titleLink.setAttribute("href", article.link)
+                    if (primaryLink) primaryLink.setAttribute("href", article.link)
+                }
+                if (article.excerpt && excerptEl) excerptEl.textContent = article.excerpt
+            }
+
+            const hydrateFeed = async (feedUrl, targetCard) => {
+                try {
+                    const xml = await fetchFeed(feedUrl)
+                    const documentXml = new DOMParser().parseFromString(xml, "text/xml")
+                    const firstItem = documentXml.querySelector("channel > item") || documentXml.querySelector("item")
+                    if (!firstItem) return
+
+                    const articleLink = extractText(firstItem, "link")
+                    const title = extractText(firstItem, "title")
+                    const rawContent = extractText(firstItem, "content:encoded") || extractText(firstItem, "description")
+
+                    updateCard(targetCard, {
+                        title,
+                        link: articleLink,
+                        date: formatDate(extractText(firstItem, "pubDate")),
+                        excerpt: buildExcerpt(rawContent),
+                        image: extractImage(firstItem),
+                    })
+                } catch (error) {
+                    console.warn(`Feed hydration failed for ${feedUrl}:`, error)
+                }
+            }
+
+            feeds.forEach((feedUrl, index) => {
+                const card = blogCards[index]
+                if (card) hydrateFeed(feedUrl, card)
+            })
+        })
+    </script>
+
     <!-- AOS Animation -->
     <script>
         AOS.init({
