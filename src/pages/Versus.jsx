@@ -159,7 +159,7 @@ export default function Versus() {
               animate={{ opacity: 1, y: 0 }}
               className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-blue-200 bg-clip-text text-transparent"
             >
-              FitFinder
+              FitFindr
               <span className="block text-yellow-300">Versus</span>
             </motion.h1>
             <motion.p

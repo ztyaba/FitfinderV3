@@ -43,7 +43,7 @@ const loadInitialData = () => {
 
     return mergeWithSeed(seed, JSON.parse(stored));
   } catch (error) {
-    console.warn('Unable to read FitFinder data from storage.', error);
+    console.warn('Unable to read FitFindr data from storage.', error);
     return seed;
   }
 };
@@ -56,7 +56,7 @@ const persistData = () => {
   try {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(dataStore));
   } catch (error) {
-    console.warn('Unable to persist FitFinder data to storage.', error);
+    console.warn('Unable to persist FitFindr data to storage.', error);
   }
 };
 

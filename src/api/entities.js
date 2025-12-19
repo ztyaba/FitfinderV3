@@ -38,7 +38,7 @@ export const GameParticipation = {
 export const User = {
   getCurrent: async () => null,
   signIn: async () => {
-    throw new Error('Authentication is not available in the offline FitFinder demo.');
+    throw new Error('Authentication is not available in the offline FitFindr demo.');
   },
   signOut: async () => undefined,
 };

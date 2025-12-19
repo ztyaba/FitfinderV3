@@ -17,7 +17,7 @@ const navigationItems = [
     icon: Users,
   },
   {
-    title: "FitFinder Versus",
+    title: "FitFindr Versus",
     url: createPageUrl("Versus"),
     icon: Zap,
   },
@@ -45,7 +45,7 @@ export default function Layout({ children }) {
               </div>
               <div className="hidden sm:block">
                 <h1 className="text-xl font-bold bg-gradient-to-r from-slate-900 to-slate-700 bg-clip-text text-transparent">
-                  FitFinder
+                  FitFindr
                 </h1>
                 <p className="text-xs text-slate-500 -mt-1">Connect. Train. Compete.</p>
               </div>
@@ -85,7 +85,7 @@ export default function Layout({ children }) {
                     <Users className="w-4 h-4 text-white" />
                   </div>
                   <div>
-                    <h2 className="font-bold text-slate-900">FitFinder</h2>
+                    <h2 className="font-bold text-slate-900">FitFindr</h2>
                     <p className="text-xs text-slate-500">Connect. Train. Compete.</p>
                   </div>
                 </div>
@@ -130,7 +130,7 @@ export default function Layout({ children }) {
                 <Users className="w-4 h-4 text-white" />
               </div>
               <div>
-                <h3 className="font-semibold text-white">FitFinder</h3>
+                <h3 className="font-semibold text-white">FitFindr</h3>
                 <p className="text-xs text-slate-400">Your fitness community platform</p>
               </div>
             </div>

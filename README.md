@@ -1,6 +1,6 @@
-# FitFinder
+# FitFindr
 
-FitFinder is a Vite + React application that showcases a local-first experience for discovering fitness professionals, pickup games, courts, and player leaderboards. The original project was bootstrapped with a Base44 template, but it has been refactored to run completely offline using mock data stored in the browser.
+FitFindr is a Vite + React application that showcases a local-first experience for discovering fitness professionals, pickup games, courts, and player leaderboards. The original project was bootstrapped with a Base44 template, but it has been refactored to run completely offline using mock data stored in the browser.
 
 ## Getting started
 
