@@ -4308,6 +4308,13 @@ li.yoga_training_item.active .yoga_training_content {
     gap: 160px;
     align-items: center;
 }
+.home_blog_img.no-image {
+    min-width: 320px;
+    aspect-ratio: 4 / 3;
+}
+.home_blog_img.no-image img {
+    display: none;
+}
 a.home_blog_btn {
     display: inline-flex;
     width: 60px;

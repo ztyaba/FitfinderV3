@@ -1303,13 +1303,26 @@
             const updateCard = (card, article) => {
                 if (!article) return
 
-                const imageEl = card.querySelector(".home_blog_img img")
+                const imageContainer = card.querySelector(".home_blog_img")
+                const imageEl = imageContainer?.querySelector("img")
                 const titleLink = card.querySelector(".home_blog_detail h4 a")
                 const dateEl = card.querySelector(".home_blog_detail .line_height_20")
                 const excerptEl = card.querySelector(".home_blog_detail .line_height_30")
                 const primaryLink = card.querySelector(".home_blog_btn")
 
-                if (article.image && imageEl) imageEl.setAttribute("src", article.image)
+                const hasImage = !!article.image
+
+                if (imageContainer) imageContainer.classList.toggle("no-image", !hasImage)
+
+                if (hasImage && imageEl) {
+                    imageEl.setAttribute("src", article.image)
+                    imageEl.style.display = ""
+                    imageEl.removeAttribute("aria-hidden")
+                } else if (imageEl) {
+                    imageEl.removeAttribute("src")
+                    imageEl.style.display = "none"
+                    imageEl.setAttribute("aria-hidden", "true")
+                }
                 if (article.title && titleLink) titleLink.textContent = article.title
                 if (article.date && dateEl) dateEl.textContent = article.date
                 if (article.link) {
