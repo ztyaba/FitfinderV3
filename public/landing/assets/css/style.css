@@ -5677,3 +5677,9 @@ body.scrolled .scrolltop_area {
     justify-content: center;
     align-items: center;
 }
+
+.hidden-video,
+.hidden-testimonials,
+.hidden-instagram-strip {
+    display: none;
+}
