@@ -5685,9 +5685,12 @@ body.scrolled .scrolltop_area {
 }
 
 /* Fitfindr updates */
-.hero_media,
+.hero_media {
+    display: flex;
+}
+
 .quick_contact {
-    display: none;
+    display: flex;
 }
 
 .header_get_touch_contact .header_single_get_touch_box:nth-of-type(1),
