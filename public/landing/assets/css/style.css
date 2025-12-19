@@ -5683,3 +5683,20 @@ body.scrolled .scrolltop_area {
 .hidden-instagram-strip {
     display: none;
 }
+
+/* Fitfindr updates */
+.hero_media,
+.quick_contact {
+    display: none;
+}
+
+.header_get_touch_contact .header_single_get_touch_box:nth-of-type(1),
+.header_get_touch_contact .header_single_get_touch_box:nth-of-type(3) {
+    display: none;
+}
+
+.footer_quick_contact,
+.footer_gym_time,
+.footer_address {
+    display: none;
+}
