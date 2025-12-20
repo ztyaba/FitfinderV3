@@ -399,12 +399,22 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="common_title_area classtimetable_title text-center">
-                                <h3 class="pt-10 reveal custom_lightSpeedInLeft">WORKING HOURS AND CLASSES</h3>
+                                <h3 class="pt-10 reveal custom_lightSpeedInLeft">EVENTS NEAR YOU</h3>
                                 <h4 class="d-none">hidden</h4>
-                                <h5 class="d-none">hidden</h5>
+                                <p class="pt-15 color_lightgray mb-0">EVENT SCHEDULE.</p>
                             </div>
                         </div>
                         <div class="col-12">
+                            <form class="row g-3 align-items-center justify-content-center" id="timetableZipForm">
+                                <div class="col-md-4">
+                                    <label for="timetableZip" class="form-label color_white">Zip Code</label>
+                                    <input type="text" class="form-control" id="timetableZip" name="timetableZip" placeholder="Enter zip code" pattern="[0-9]{5}" aria-describedby="timetableZipHelp">
+                                    <small id="timetableZipHelp" class="form-text color_lightgray">Enter a 5-digit zip code to load nearby events.</small>
+                                </div>
+                                <div class="col-auto">
+                                    <button type="submit" class="btn btn-primary">Update Schedule</button>
+                                </div>
+                            </form>
                             <div class="gym_timetable pt-60" data-aos="zoom-in-up" data-aos-easing="linear" data-aos-duration="1000">
                                 <div class="timetable-area table-responsive">
                                     <table class="table m-0">
@@ -418,316 +428,9 @@
                                                 <th>Saturday</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
+                                        <tbody id="timetableBody">
                                             <tr>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Weight Lifting</h6>                                                        
-                                                        <span>John Cina</span>
-                                                        <div class="schedule_time">
-                                                            <p>8 AM - 10 AM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/weight-1.png" alt="weight-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Aerobics</h6>                                                        
-                                                        <span>Tony Kiano</span>
-                                                        <div class="schedule_time">
-                                                            <p>8 AM - 10 AM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/aerobics-1.png" alt="Aerobics-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Boxing</h6>                                                        
-                                                        <span>Steven Smith</span>
-                                                        <div class="schedule_time">
-                                                            <p>8 AM - 10 AM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/boxing-1.png" alt="boxing-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Aerobics</h6>
-                                                        <span>Tony Kiano</span>
-                                                        <div class="schedule_time">
-                                                            <p>8 AM - 10 AM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/aerobics-1.png" alt="Aerobics-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Weight Lifting</h6>
-                                                        <span>John Cina</span>
-                                                        <div class="schedule_time">
-                                                            <p>8 AM - 10 AM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/weight-1.png" alt="weight-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Aerobics</h6>
-                                                        <span>Tony Kiano</span>
-                                                        <div class="schedule_time">
-                                                            <p>8 AM - 10 AM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/aerobics-1.png" alt="Aerobics-1 image" class="img-fluid time-image">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Zumba Class</h6>                                                        
-                                                        <span>Ketty Lumia</span>
-                                                        <div class="schedule_time">
-                                                            <p>10 AM - 12 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/zumba-1.png" alt="zumba-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Power Yoga</h6>                                                        
-                                                        <span>Latina Hardi</span>
-                                                        <div class="schedule_time">
-                                                            <p>10 AM - 12 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/yoga-1.png" alt="yoga-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail active">
-                                                    <div class="tabel_content">
-                                                        <h6>Power Yoga</h6>
-                                                        <span>Latina Hardi</span>
-                                                        <div class="schedule_time">
-                                                            <p>10 AM - 12 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/yoga-1.png" alt="yoga-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Cardio</h6>                                                        
-                                                        <span>Maria Anderson</span>
-                                                        <div class="schedule_time">
-                                                            <p>10 AM - 12 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/cardio-1.png" alt="cardio-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Aerobics</h6>
-                                                        <span>Tony Kiano</span>
-                                                        <div class="schedule_time">
-                                                            <p>10 AM - 12 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/aerobics-1.png" alt="Aerobics-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Power Yoga</h6>
-                                                        <span>Latina Hardi</span>
-                                                        <div class="schedule_time">
-                                                            <p>10 AM - 12 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/yoga-1.png" alt="yoga-1 image" class="img-fluid time-image">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Cardio</h6>
-                                                        <span>Maria Anderson</span>
-                                                        <div class="schedule_time">
-                                                            <p>12 PM - 2 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/cardio-1.png" alt="cardio-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Boxing</h6>
-                                                        <span>Steven Smith</span>
-                                                        <div class="schedule_time">
-                                                            <p>12 PM - 2 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/boxing-1.png" alt="boxing-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Zumba Class</h6>
-                                                        <span>Ketty Lumia</span>
-                                                        <div class="schedule_time">
-                                                            <p>12 PM - 2 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/zumba-1.png" alt="zumba-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Weight Lifting</h6>
-                                                        <span>John Cina</span>
-                                                        <div class="schedule_time">
-                                                            <p>12 PM - 2 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/weight-1.png" alt="weight-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Cardio</h6>
-                                                        <span>Maria Anderson</span>
-                                                        <div class="schedule_time">
-                                                            <p>12 PM - 2 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/cardio-1.png" alt="cardio-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Boxing</h6>
-                                                        <span>Steven Smith</span>
-                                                        <div class="schedule_time">
-                                                            <p>12 PM - 2 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/boxing-1.png" alt="boxing-1 image" class="img-fluid time-image">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Boxing</h6>
-                                                        <span>Steven Smith</span>
-                                                        <div class="schedule_time">
-                                                            <p>2 PM - 4 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/boxing-1.png" alt="boxing-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Zumba Class</h6>
-                                                        <span>Ketty Lumia</span>
-                                                        <div class="schedule_time">
-                                                            <p>2 PM - 4 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/zumba-1.png" alt="zumba-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Cardio</h6>
-                                                        <span>Maria Anderson</span>
-                                                        <div class="schedule_time">
-                                                            <p>2 PM - 4 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/cardio-1.png" alt="cardio-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Power Yoga</h6>
-                                                        <span>Latina Hardi</span>
-                                                        <div class="schedule_time">
-                                                            <p>2 PM - 4 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/yoga-1.png" alt="yoga-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Boxing</h6>
-                                                        <span>Steven Smith</span>
-                                                        <div class="schedule_time">
-                                                            <p>2 PM - 4 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/boxing-1.png" alt="boxing-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Zumba Class</h6>
-                                                        <span>Ketty Lumia</span>
-                                                        <div class="schedule_time">
-                                                            <p>2 PM - 4 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/zumba-1.png" alt="zumba-1 image" class="img-fluid time-image">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Power Yoga</h6>
-                                                        <span>Latina Hardi</span>
-                                                        <div class="schedule_time">
-                                                            <p>4 PM - 6 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/yoga-1.png" alt="yoga-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Weight Lifting</h6>
-                                                        <span>John Cina</span>
-                                                        <div class="schedule_time">
-                                                            <p>4 PM - 6 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/weight-1.png" alt="weight-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Aerobics</h6>
-                                                        <span>Tony Kiano</span>
-                                                        <div class="schedule_time">
-                                                            <p>4 PM - 6 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/aerobics-1.png" alt="Aerobics-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Boxing</h6>
-                                                        <span>Steven Smith</span>
-                                                        <div class="schedule_time">
-                                                            <p>4 PM - 6 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/boxing-1.png" alt="boxing-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Power Yoga</h6>
-                                                        <span>Latina Hardi</span>
-                                                        <div class="schedule_time">
-                                                            <p>4 PM - 6 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/yoga-1.png" alt="yoga-1 image" class="img-fluid time-image">
-                                                </td>
-                                                <td class="body_detail">
-                                                    <div class="tabel_content">
-                                                        <h6>Weight Lifting</h6>
-                                                        <span>John Cina</span>
-                                                        <div class="schedule_time">
-                                                            <p>4 PM - 6 PM</p>
-                                                        </div>
-                                                    </div>
-                                                    <img src="assets/images/time_table-img/weight-1.png" alt="weight-1 image" class="img-fluid time-image">
-                                                </td>
+                                                <td colspan="6" class="text-center body_detail">Enter a zip code to view the event schedule for your area.</td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -1049,6 +752,45 @@
     <script src="assets/js/allsliders.js"></script>
     <script src="assets/js/custome-cursor.js"></script>
     <script src="assets/js/style.js"></script>
+
+    <script>
+        (function () {
+            const form = document.getElementById('timetableZipForm');
+            const tableBody = document.getElementById('timetableBody');
+            const zipInput = document.getElementById('timetableZip');
+            const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+
+            if (!form || !tableBody) {
+                return;
+            }
+
+            const clearBody = () => {
+                while (tableBody.firstChild) {
+                    tableBody.removeChild(tableBody.firstChild);
+                }
+            };
+
+            const renderPlaceholder = (zipCode) => {
+                const row = document.createElement('tr');
+
+                days.forEach((day) => {
+                    const cell = document.createElement('td');
+                    cell.classList.add('body_detail');
+                    cell.textContent = zipCode ? `No events loaded for ${day} in ${zipCode} yet.` : 'No events loaded yet.';
+                    row.appendChild(cell);
+                });
+
+                tableBody.appendChild(row);
+            };
+
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                clearBody();
+                const zipValue = zipInput ? zipInput.value.trim() : '';
+                renderPlaceholder(zipValue);
+            });
+        })();
+    </script>
 
     <!-- AOS Animation -->
     <script>
