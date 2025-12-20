@@ -2553,8 +2553,8 @@ a.orange_btn.white_btn span.orenge_icon::before,
 .hero_video_frame {
     position: relative;
     width: 100%;
-    max-width: 480px;
-    aspect-ratio: 10 / 16;
+    max-width: 430px;
+    aspect-ratio: 9 / 16;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 28px;
