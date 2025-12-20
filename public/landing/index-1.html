@@ -1211,6 +1211,8 @@
             const blogCards = Array.from(document.querySelectorAll(".blog_home_v1"))
             if (!blogCards.length) return
 
+            const FEED_REFRESH_MS = 4 * 60 * 60 * 1000
+            const homeBlogsSection = document.getElementById("home_blogs_v1")
             const feeds = [
                 "https://www.nerdfitness.com/feed/",
                 "https://athletechnews.com/category/tech/feed/",
@@ -1364,12 +1366,22 @@
                 )
             }
 
+            const updateNextRefreshMetadata = () => {
+                const nextRefreshTimestamp = Date.now() + FEED_REFRESH_MS
+                if (homeBlogsSection) {
+                    homeBlogsSection.dataset.nextRefreshIso = new Date(nextRefreshTimestamp).toISOString()
+                }
+                return nextRefreshTimestamp
+            }
+
             hydrateFeeds()
+            updateNextRefreshMetadata()
 
             const startFeedHydrationInterval = () => {
                 const intervalId = setInterval(() => {
                     hydrateFeeds()
-                }, 10800000) // Refresh feeds every 3 hours to keep cards current.
+                    updateNextRefreshMetadata()
+                }, FEED_REFRESH_MS) // Refresh feeds every 4 hours to keep cards current.
 
                 const cleanup = () => clearInterval(intervalId)
                 window.addEventListener("beforeunload", cleanup)
