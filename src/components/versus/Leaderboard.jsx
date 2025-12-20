@@ -22,7 +22,7 @@ const SPORT_EMOJIS = {
 const RANK_COLORS = {
   1: "from-yellow-400 to-yellow-600",
   2: "from-gray-300 to-gray-500",
-  3: "from-orange-400 to-orange-600",
+  3: "from-blue-500 to-blue-700",
 };
 
 export default function Leaderboard({ players }) {
@@ -93,7 +93,7 @@ export default function Leaderboard({ players }) {
     switch (rank) {
       case 1: return <Trophy className="w-6 h-6 text-yellow-500" />;
       case 2: return <Medal className="w-6 h-6 text-gray-400" />;
-      case 3: return <Award className="w-6 h-6 text-orange-500" />;
+      case 3: return <Award className="w-6 h-6 text-blue-600" />;
       default: return <span className="w-6 h-6 flex items-center justify-center text-slate-600 font-bold">#{rank}</span>;
     }
   };

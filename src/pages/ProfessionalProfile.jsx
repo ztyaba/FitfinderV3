@@ -15,7 +15,7 @@ const SPECIALTY_COLORS = {
   pilates: "bg-pink-100 text-pink-800",
   crossfit: "bg-red-100 text-red-800",
   nutrition: "bg-green-100 text-green-800",
-  weight_loss: "bg-orange-100 text-orange-800",
+  weight_loss: "bg-blue-100 text-blue-800",
   strength_training: "bg-gray-100 text-gray-800",
   cardio: "bg-cyan-100 text-cyan-800",
   rehabilitation: "bg-teal-100 text-teal-800",

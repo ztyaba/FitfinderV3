@@ -129,7 +129,7 @@ html {
     display: none;
 }
 ::-webkit-scrollbar-thumb {
-    background: #FF640D;
+    background: #0a2342;
     background-clip: content-box;
 }
 ::-webkit-scrollbar-track {
@@ -561,11 +561,11 @@ input.input-textarea::placeholder {
     background-color: #181818;
 }
 .color_orange {
-    color: #FF640D;
+    color: #0a2342;
 }
 .bg_orange,
 .form-check-input:checked {
-    background-color: #FF640D;
+    background-color: #0a2342;
 }
 .color_lightgray {
     color: #D6D6D6;
@@ -940,7 +940,7 @@ input.input-textarea::placeholder {
 }
 @keyframes pulse512 {
     0% {
-        box-shadow: 0 0 0 0 #ff640d;
+        box-shadow: 0 0 0 0 #0a2342;
     }
     70% {
         box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
@@ -1284,7 +1284,7 @@ input.input-textarea::placeholder {
     overflow: hidden;
     -webkit-mask-image: -webkit-linear-gradient(top, #000000, rgba(0, 0, 0, 0));
     border-radius: 50%;
-    border: 2px solid #FF640D;
+    border: 2px solid #0a2342;
     animation: loader-rotate 1.2s infinite linear;
 }
 .preloader_img {
@@ -1298,7 +1298,7 @@ input.input-textarea::placeholder {
     transform: translate(-50%, -50%);
     width: 40px;
     height: 40px;
-    border: 2px solid #ff640d;
+    border: 2px solid #0a2342;
     border-radius: 50%;
     pointer-events: none;
     opacity: 1;
@@ -1331,8 +1331,8 @@ input.input-textarea::placeholder {
     position: absolute;
     font-size: 7px;
     left: 50%;
-    background: #ff640d;
-    border: 1px solid #ff640d;
+    background: #0a2342;
+    border: 1px solid #0a2342;
     border-radius: 50%;
     top: 50%;
     width: 10px;
@@ -1378,7 +1378,7 @@ input.input-textarea::placeholder {
     left: 0;
     filter: blur(3px);
     mix-blend-mode: difference;
-    background: #ff640d;
+    background: #0a2342;
     border: 0;
 }
 .megic-cursor-item.triners_icons::after {
@@ -1452,7 +1452,7 @@ input.input-textarea::placeholder {
     line-height: normal;
     font-weight: 400;
     font-family: "Zen Dots", sans-serif;
-    color: #ff640d;
+    color: #0a2342;
     transform: scale(1.3);
     width: 100%;
     height: 100%;
@@ -1484,7 +1484,7 @@ input.input-textarea::placeholder {
     border: 0;
 }
 .megic-cursor-item.custom_cursor_blackborder.orangeglow_btn::after {
-    background: #ff640d;
+    background: #0a2342;
     border: 0;
 }
 .megic-cursor-item.tabimg_glow {
@@ -1536,7 +1536,7 @@ div.common_header_1 {
     background: #000;
     box-shadow: 0 0px 10px 6px rgb(0 0 0 / 26%);
     animation: fixedheader 600ms ease 0ms alternate;
-    border-bottom: 1px solid #ff640d;
+    border-bottom: 1px solid #0a2342;
 }
 .header_searchbar {
     position: relative;
@@ -1611,7 +1611,7 @@ div.search-label {
 }
 .search-input {
     width: 70%;
-    border: 2px solid #FF640D;
+    border: 2px solid #0a2342;
     position: relative;
     display: flex;
     gap: 30px;
@@ -1713,7 +1713,7 @@ ul.dasktop_navlist>li.nav-items>a {
 }
 ul.dasktop_navlist>li.nav-items a.active span svg g path,
 .desktop_navbar ul.dasktop_navlist li.nav-items a:hover span svg g path {
-    stroke: #ff640d;
+    stroke: #0a2342;
 }
 ul.custome_dropdown,
 ul.custome_inner_dropdown {
@@ -1849,7 +1849,7 @@ ul.custome_dropdown li.nav-items a {
 .mega_dropdown.custome_dropdown_1 ul li.nav-items a:hover>div::before {
     width: calc(100% / 1);
     height: 100%;
-    border: 3px solid #ff640d;
+    border: 3px solid #0a2342;
     border-right: none;
     border-bottom: none;
     transition: height 0.3s linear, width 0.3s linear 0.3s;
@@ -1858,7 +1858,7 @@ ul.custome_dropdown li.nav-items a {
 .mega_dropdown.custome_dropdown_1 ul li.nav-items a:hover>div::after {
     width: calc(100% / 1);
     height: 100%;
-    border: 3px solid #ff640d;
+    border: 3px solid #0a2342;
     border-left: none;
     border-top: none;
     transition: height 0.3s linear, width 0.3s linear 0.3s;
@@ -1870,7 +1870,7 @@ ul.custome_dropdown li.nav-items a {
 }
 #header_theme_4 .mega_dropdown.custome_dropdown_1 ul li.nav-items a:hover>div::before,
 #header_theme_4 .mega_dropdown.custome_dropdown_1 ul li.nav-items a:hover>div::after {
-    border-color: #ff640d;
+    border-color: #0a2342;
 }
 ul.custome_dropdown.custome_dropdown_4 {
     min-width: 260px;
@@ -1883,7 +1883,7 @@ ul.custome_dropdown li.nav-items a::before {
     position: absolute;
     bottom: -1px;
     left: 0;
-    background: linear-gradient(90deg, #fff, #ff640d, #fff);
+    background: linear-gradient(90deg, #fff, #0a2342, #fff);
     width: 100%;
     height: 1px;
     transform: scaleX(0);
@@ -1960,7 +1960,7 @@ div#header_theme_1 .header_sec.sticky .header_area div.custome_dropdown {
     background: #fff;
 }
 a.header_gettouch_icons {
-    border: 1px solid #ff640d;
+    border: 1px solid #0a2342;
     border-radius: 50px;
     display: inline-flex;
     align-items: center;
@@ -1979,7 +1979,7 @@ a.header_gettouch_icons {
     width: 34%;
 }
 a.header_gettouch_icons:hover {
-    background-color: #ff640d;
+    background-color: #0a2342;
     color: #fff;
 }
 ul.mobile_navlist {
@@ -2036,7 +2036,7 @@ ul.drop_down_menu li a::before {
     position: absolute;
     bottom: -1px;
     left: 0;
-    background: linear-gradient(90deg, #fff, #ff640d, #fff);
+    background: linear-gradient(90deg, #fff, #0a2342, #fff);
     width: 100%;
     height: 1px;
     transform: scaleX(0);
@@ -2060,8 +2060,8 @@ ul.drop_down_menu li a span {
     padding: 40px 1rem;
 }
 ul.mobile_navlist>li>a:hover span {
-    background: #ff640d;
-    border: 1px solid #ff640d;
+    background: #0a2342;
+    border: 1px solid #0a2342;
 }
 ul.mobile_navlist>li>a:hover span svg g path,
 ul.drop_down_menu li a:hover span svg g path {
@@ -2069,7 +2069,7 @@ ul.drop_down_menu li a:hover span svg g path {
     transition: .35s;
 }
 ul.drop_down_menu li a:hover span svg g path {
-    stroke: #ff640d;
+    stroke: #0a2342;
 }
 /* Header_2 */
 .header_theme_2 ul.dasktop_navlist>li.nav-items>a {
@@ -2128,7 +2128,7 @@ div#our_training_Programpage>.row,
     right: 0;
     width: 3px;
     height: 0px;
-    background: #ff640d;
+    background: #0a2342;
     transition: all 0.75s;
 }
 
@@ -2213,11 +2213,11 @@ ul.drop_down_menu li a:hover,
 .footer_mid_area a:hover,
 .footer_bottom_area a:hover,
 .common_banner_bg a:hover {
-    color: #ff640d;
+    color: #0a2342;
 }
 ul.navbar_v3>li.nav-items a.active span svg g path,
 ul.navbar_v3 li.nav-items a:hover span svg g path {
-    stroke: #ff640d;
+    stroke: #0a2342;
 }
 #header_theme_4 .mega_dropdown.custome_dropdown_1 {
     top: 110%;
@@ -2244,7 +2244,7 @@ span.orenge_text {
     position: relative;
     display: inline-block;
     padding: 17px 30px;
-    background: #ff640d;
+    background: #0a2342;
     transition: transform 0.3s;
     transform-origin: 50% 0;
     transform-style: preserve-3d;
@@ -2258,7 +2258,7 @@ span.orenge_text::before {
     height: 100%;
     padding: 15px 30px;
     background: #fff;
-    color: #ff640d;
+    color: #0a2342;
     transition: transform 0.3s;
     transform: rotateX(-90deg);
     transform-origin: 50% 0;
@@ -2307,7 +2307,7 @@ button.black_btn span.orenge_icon {
 }
 a.orange_btn.white_btn,
 .home_banner_tabs_button>.orange_btn.white_btn {
-    color: #ff640d;
+    color: #0a2342;
 }
 a.orange_btn.white_btn span.orenge_text,
 .home_banner_tabs_button>.orange_btn.white_btn span.orenge_text {
@@ -2329,7 +2329,7 @@ a.orange_btn.white_btn span.orenge_icon::before,
 }
 .individualtraning_post_button_area .our_project_post_btn span.orenge_text::before,
 .leave_form_btn button.black_btn span.orenge_text::before {
-    background: #ff640d;
+    background: #0a2342;
     color: #fff;
 }
 .leave_form_btn button.black_btn span.orenge_text::before {
@@ -2337,7 +2337,7 @@ a.orange_btn.white_btn span.orenge_icon::before,
 }
 .individualtraning_post_button_area .our_project_post_btn span.orenge_icon,
 .leave_form_btn button.black_btn span.orenge_icon {
-    background: #ff640d;
+    background: #0a2342;
 }
 .individualtraning_post_button_area .our_project_post_btn span.orenge_icon::before,
 .leave_form_btn button.black_btn span.orenge_icon::before {
@@ -2998,7 +2998,7 @@ ul.home_banner_tabs li.active .home_banner_tabs_title_area {
     transition: transform 0.5s ease;
 }
 .we_offer_box:hover .we_offer_icon svg g path {
-    fill: #FF640D;
+    fill: #0a2342;
 }
 .we_offer_icon img {
     width: clamp(140px, 15vw, 180px);
@@ -3122,7 +3122,7 @@ div#home_blogs_v2 .common_title_area.home_blogs_title,
     position: absolute;
     top: 0;
     left: 0;
-    background: #FF640D;
+    background: #0a2342;
     animation: program_animi 2s infinite linear;
     z-index: -1;
 }
@@ -3195,10 +3195,10 @@ ul.program_tabs li a .tab_program_title_info p {
     padding: 4px 10px;
 }
 ul.program_tabs li.active a .tab_program_title_info p {
-    background: #ff640d;
+    background: #0a2342;
 }
 ul.program_tabs li.active a .tab_program_title_info h4 {
-    color: #ff640d;
+    color: #0a2342;
 }
 .my_program_content_tabs {
     transform: scale(0.9);
@@ -3246,7 +3246,7 @@ ul.program_tabs li.active a .tab_program_title_info h4 {
 }
 .our_progress_box:hover .progress_img::before {
     animation: progress-rotate 9s linear infinite;
-    border-color: #FF640D;
+    border-color: #0a2342;
 }
 .progress_step_info h5 {
     margin: 20px 0px 10px;
@@ -3501,7 +3501,7 @@ div#counter_sec_home3 .counter_strok_text.counter {
 /* Meet-Team V1 */
 .triners_img {
     position: relative;
-    border-bottom: 6px solid #FF640D;
+    border-bottom: 6px solid #0a2342;
     overflow: hidden;
 }
 .triners_img::before {
@@ -3565,13 +3565,13 @@ div#counter_sec_home3 .counter_strok_text.counter {
 .client_say_slider_list_v4 ul.slick-dots li.slick-active button {
     width: 35px;
     border-radius: 30px;
-    background: #FF640D;
+    background: #0a2342;
 }
 .triners_info ul li a:hover svg {
     transform: scale(1.5) translateY(-5px);
 }
 .triners_info ul li a:hover svg g path {
-    fill: #ff640d;
+    fill: #0a2342;
 }
 /* Meet-Team V2 */
 .meet_team_v2_slider_area {
@@ -3614,7 +3614,7 @@ div#counter_sec_home3 .counter_strok_text.counter {
 }
 .meet_team_v2_slider_area .slick-custom-arrow.slick-arrow:hover svg circle,
 .meet_team_v2_slider_list_meetteampage .slick-custom-arrow.slick-arrow:hover svg circle {
-    fill: #ff640d;
+    fill: #0a2342;
     transition: 0.5s;
 }
 .meet_team_img {
@@ -3687,7 +3687,7 @@ button.shareButton.main {
     opacity: 1;
 }
 .meet_team_social_button.open button.shareButton.main {
-    background: #ff640d;
+    background: #0a2342;
 }
 .meet_team_social_button.open .shareButton.main .close_slider path {
     fill: #fff;
@@ -3701,7 +3701,7 @@ button.shareButton.main {
 }
 .meet_team_v2_item.slick-slide.slick-current.slick-active .meet_team_v2_box .meet_team_info.triners_info h5 a,
 .meet_team_v2_item:hover .meet_team_v2_box .meet_team_info.triners_info h5 a {
-    color: #ff640d;
+    color: #0a2342;
 }
 /* ============================== Client-Say Slider ============================== */
 .client_say_slider_v1_bg {
@@ -3909,12 +3909,12 @@ ul.pricing_bottom_item_list li::marker {
 }
 .pricing_plan_v2_head {
     padding: 70px 40px;
-    box-shadow: inset 0 0 0 0px #ff640d;
+    box-shadow: inset 0 0 0 0px #0a2342;
     transition: 0.5s ease-in-out;
 }
 .pricing_plan_v2_box.active .pricing_plan_v2_head,
 .pricing_plan_v2_box:hover .pricing_plan_v2_head {
-    box-shadow: inset 300px 230px 0 0 #ff640d;
+    box-shadow: inset 300px 230px 0 0 #0a2342;
     transition: 0.5s ease-in-out;
 }
 .pricing_plan_v2_box.active .pricing_plan_v2_head>*,
@@ -3952,7 +3952,7 @@ ul.pricing_bottom_item_list li::marker {
 .pricing_plan_v2_bottom:hover::before {
     width: calc(100% / 1);
     height: 0;
-    border: 2px solid #ff640d;
+    border: 2px solid #0a2342;
     border-right: none;
     border-bottom: none;
     transition: height 0.3s linear, width 0.3s linear 0.3s;
@@ -3974,7 +3974,7 @@ ul.pricing_bottom_item_list li::marker {
 .pricing_plan_v2_bottom:hover::after {
     width: calc(100% / 1);
     height: 101%;
-    border: 2px solid #ff640d;
+    border: 2px solid #0a2342;
     border-left: none;
     border-top: none;
     transition: height 0.3s linear, width 0.3s linear 0.3s;
@@ -4106,7 +4106,7 @@ ul.pricing_plan_v2_points li svg {
     margin: auto;
     width: 50px;
     height: 2px;
-    background: #ff640d;
+    background: #0a2342;
     display: flex;
     -webkit-animation: about_border 2.5s linear infinite;
     animation: about_border 2.5s linear infinite;
@@ -4124,12 +4124,12 @@ ul.pricing_plan_v2_points li svg {
     padding: 12px 20px;
 }
 .BMI_calculater_form_box input:focus-visible {
-    outline: #ff640d solid 2px;
+    outline: #0a2342 solid 2px;
 }
 .BMI_calculater_form_box select:focus,
 .get_touch_form .get_touch_box .form-control:focus,
 section#get_touch_section_ourprogrampage .get_touch_form .get_touch_box .form-control:focus {
-    border-color: #ff640d;
+    border-color: #0a2342;
     box-shadow: none;
 }
 .BMI_calculater_form_box input::placeholder {
@@ -4198,12 +4198,12 @@ li.yoga_training_item {
     white-space: nowrap;
     align-items: center;
     background: #000;
-    box-shadow: inset 0 0 0 #FF640D;
+    box-shadow: inset 0 0 0 #0a2342;
     justify-content: space-between;
     z-index: 1;
 }
 li.yoga_training_item.active .yoga_training_title {
-    box-shadow: inset 0px 700px 0 #FF640D;
+    box-shadow: inset 0px 700px 0 #0a2342;
     transition: 1s cubic-bezier(0.6, -0.28, 0.74, 0.05);
 }
 .yoga_training_title h4 {
@@ -4267,7 +4267,7 @@ li.yoga_training_item.active .yoga_training_content {
     flex-direction: column;
 }
 .get_touch_contact a:hover {
-    color: #FF640D;
+    color: #0a2342;
 }
 .get_touch_area>.row {
     align-items: end;
@@ -4322,10 +4322,10 @@ a.home_blog_btn {
     justify-content: center;
     align-items: center;
     border: 2px solid #fff;
-    box-shadow: inset 0px 0px 0px #ff640d;
+    box-shadow: inset 0px 0px 0px #0a2342;
 }
 a.home_blog_btn:hover {
-    box-shadow: inset 0px 0px 20px 40px #ff640d;
+    box-shadow: inset 0px 0px 20px 40px #0a2342;
 }
 .home_blog_detail h4 {
     padding: 10px 0px 20px;
@@ -4338,7 +4338,7 @@ a.home_blog_btn:hover {
     text-decoration: none;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(to right, #ff640d, #ff640d 50%, #fff 50%);
+    background-image: linear-gradient(to right, #0a2342, #0a2342 50%, #fff 50%);
     background-size: 200% 100%;
     background-position: 100%;
 }
@@ -4371,7 +4371,7 @@ p.blog_highlite_box {
 .home_blog_info_v2 h4 a,
 .sidebar_post_box a {
     color: #000;
-    background-image: linear-gradient(to right, #ff640d, #ff640d 50%, #000 50%);
+    background-image: linear-gradient(to right, #0a2342, #0a2342 50%, #000 50%);
 }
 /* ============================== Insta-Feed ============================== */
 a.insta_feed_box {
@@ -4550,7 +4550,7 @@ div#BMI_calculater_page .BMI_calculater_form_box>* {
     font-size: 22px;
     line-height: normal;
     color: #fff;
-    background: #FF640D;
+    background: #0a2342;
     font-weight: 400;
 }
 .timetable-area tbody tr td.body_detail {
@@ -4611,7 +4611,7 @@ div#BMI_calculater_page .BMI_calculater_form_box>* {
 }
 .timetable-area tbody tr td.body_detail.active,
 .timetable-area tbody tr td.body_detail:hover {
-    background: #ff640d;
+    background: #0a2342;
 }
 .timetable-area tbody tr td.body_detail.active img.img-fluid.time-image,
 .timetable-area tbody tr td.body_detail:hover img.img-fluid.time-image {
@@ -4701,13 +4701,13 @@ section#gallery_slider_sec_Pricingplanpage .gallery_slider_list .slick-custom-ar
     padding-top: 20px;
 }
 .faq_accodian_title.active h6 {
-    color: #ff640d;
+    color: #0a2342;
 }
 .faq_accodian_title.active svg {
     transform: rotate(45deg);
 }
 .faq_accodian_title.active svg g path {
-    stroke: #ff640d;
+    stroke: #0a2342;
 }
 .row.faq_tabs_area>div:nth-child(5) hr.faq_custome_hr,
 .row.faq_tabs_area>div:last-child hr.faq_custome_hr {
@@ -4861,7 +4861,7 @@ button.comingsoon_subscribe_btn {
     right: 10px;
     top: 10px;
     border: 0;
-    background: #ff640d;
+    background: #0a2342;
     color: #fff;
     padding: 14px 30px;
 }
@@ -4915,7 +4915,7 @@ button.comingsoon_subscribe_btn:hover {
     line-height: 400px;
     color: transparent;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #ff640d;
+    -webkit-text-stroke-color: #0a2342;
     z-index: -1;
     clip: rect(44px, 450px, 56px, 0);
     animation: errortext 2s infinite linear alternate;
@@ -4929,7 +4929,7 @@ button.comingsoon_subscribe_btn:hover {
     line-height: 400px;
     color: transparent;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #ff640d;
+    -webkit-text-stroke-color: #0a2342;
     z-index: -1;
     clip: rect(424px, 450px, 516px, 0);
     animation: errortext2 3s infinite linear alternate-reverse;
@@ -4975,7 +4975,7 @@ ul.our_project_tabs {
 .project_info_box h6 {
     display: inline-block;
     padding: 6px 20px;
-    background: #FF640D;
+    background: #0a2342;
 }
 .project_info_box h5 {
     padding: 16px 20px;
@@ -5067,11 +5067,11 @@ ul.blog_hastags_list a {
     padding: 12px;
     border: 2px solid #F2F2F2;
     border-radius: 50%;
-    box-shadow: inset 0 0 0 0px #ff640d;
+    box-shadow: inset 0 0 0 0px #0a2342;
     transition: all 0.5s ease-in-out;
 }
 .single_project_social_icon_area a:hover {
-    box-shadow: inset 0 0 30px 30px #ff640d;
+    box-shadow: inset 0 0 30px 30px #0a2342;
     border: 2px solid #000;
     transition: all 0.5s ease-in-out;
 }
@@ -5313,7 +5313,7 @@ div#Masonry_gallery_v4 .grid_project_list .our_project_item img {
 }
 /* ============================== 21 Blogs Page ============================== */
 .our_blog_big_heading a {
-    background-image: linear-gradient(to right, #ff640d, #ff640d 50%, #000 50%);
+    background-image: linear-gradient(to right, #0a2342, #0a2342 50%, #000 50%);
 }
 .our_blogs_pera_box,
 .our_blogs_musicplayer_box {
@@ -5341,7 +5341,7 @@ div#Masonry_gallery_v4 .grid_project_list .our_project_item img {
     border: 2px solid #F5F6F7;
 }
 .sidebar_search_area input:focus-visible {
-    outline: #ff640d solid 2px;
+    outline: #0a2342 solid 2px;
 }
 .sidebar_search_area input::placeholder,
 .leavemsg_box input::placeholder,
@@ -5474,7 +5474,7 @@ li.blogs_pagenation_item a:hover svg g path {
 }
 .blog_listing_v1 .home_blog_detail h4 a {
     color: #000;
-    background-image: linear-gradient(to right, #ff640d, #ff640d 50%, #000 50%);
+    background-image: linear-gradient(to right, #0a2342, #0a2342 50%, #000 50%);
 }
 .blog_listing_v1 a.home_blog_btn {
     border: 2px solid #000;
@@ -5518,7 +5518,7 @@ h4.single_blog_bottom_heading {
     height: 24px;
     font-size: 24px;
     padding: 10px;
-    border: 2px solid #ff640d;
+    border: 2px solid #0a2342;
     margin: 0;
     border-radius: 3px;
 }
@@ -5579,7 +5579,7 @@ div#single_blogs_standard .youtubevideo-player.youtube_blogs_video,
 }
 .get_touch_text a .text:nth-child(5n+3),
 .footer_upper_big_text a:hover .text:nth-child(5n+3) {
-    stroke: #ff640d;
+    stroke: #0a2342;
     -webkit-animation-delay: -3.6s;
     animation-delay: -3.6s;
 }
@@ -5591,7 +5591,7 @@ div#single_blogs_standard .youtubevideo-player.youtube_blogs_video,
 }
 .get_touch_text a .text:nth-child(5n+5),
 .footer_upper_big_text a:hover .text:nth-child(5n+5) {
-    stroke: #ff640d;
+    stroke: #0a2342;
     -webkit-animation-delay: -6s;
     animation-delay: -6s;
 }
@@ -5628,7 +5628,7 @@ ul.footer_social_icon li a {
     border: 2px solid rgb(242 242 242 / 20%);
     border-radius: 50%;
     padding: 14px;
-    box-shadow: inset 0 0 0 0px #ff640d;
+    box-shadow: inset 0 0 0 0px #0a2342;
 }
 ul.our_project_tabs li.active a,
 ul.our_project_tabs li a:hover,
@@ -5638,10 +5638,10 @@ ul.blog_hastags_list a:hover,
 .footer_mid_area a:hover,
 .footer_bottom_area a:hover,
 .comment_info a:hover {
-    color: #ff640d;
+    color: #0a2342;
 }
 ul.footer_social_icon li a:hover {
-    box-shadow: inset 0 0px 50px 50px #ff640d;
+    box-shadow: inset 0 0px 50px 50px #0a2342;
     border: 2px solid #fff;
 }
 /* ============================== 24 Scroll To Top Button ============================== */
@@ -5679,7 +5679,7 @@ body.scrolled .scrolltop_area {
     height: 48px;
     border: 2px solid #fff;
     border-radius: 50%;
-    background: #FF640D;
+    background: #0a2342;
     display: flex;
     justify-content: center;
     align-items: center;

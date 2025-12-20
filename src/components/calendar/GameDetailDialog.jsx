@@ -24,7 +24,7 @@ const SPORT_EMOJIS = {
 };
 
 const SPORT_COLORS = {
-  basketball: "bg-orange-100 text-orange-800",
+  basketball: "bg-blue-100 text-blue-800",
   tennis: "bg-green-100 text-green-800",
   soccer: "bg-blue-100 text-blue-800",
   volleyball: "bg-purple-100 text-purple-800",

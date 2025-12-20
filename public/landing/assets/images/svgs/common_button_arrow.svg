@@ -3,7 +3,7 @@
 <path d="M0 0H30V30H0V0Z" fill="white"/>
 </mask>
 <g mask="url(#mask0_1_13526)">
-<path d="M21.25 8.75L8.75 21.25" stroke="#FF640D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M10 8.75H21.25V20" stroke="#FF640D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M21.25 8.75L8.75 21.25" stroke="#0a2342" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 8.75H21.25V20" stroke="#0a2342" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 </svg>
