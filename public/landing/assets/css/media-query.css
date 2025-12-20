@@ -326,7 +326,7 @@
         border-radius: 50%;
     }
     .header_v3_area button.navbar-toggler span.navbar-toggler-icon.sidebar_open_icon svg circle {
-        fill: #ff640d;
+        fill: #0a2342;
     }
     .banner_v3_area,
     .sec_resize_area,
@@ -1362,7 +1362,7 @@
         width: 100%;
     }
     li.yoga_training_item.active .yoga_training_title {
-        box-shadow: inset 0px 100px 0 #FF640D;
+        box-shadow: inset 0px 100px 0 #0a2342;
     }
     ul.yoga_training_content_area {
         height: 100%;

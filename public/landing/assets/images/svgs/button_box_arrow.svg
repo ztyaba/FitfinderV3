@@ -4,7 +4,7 @@
 <path d="M15 15H45V45H15V15Z" fill="white"/>
 </mask>
 <g mask="url(#mask0_71_8)">
-<path d="M36.25 23.75L23.75 36.25" stroke="#FF640D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M25 23.75H36.25V35" stroke="#FF640D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M36.25 23.75L23.75 36.25" stroke="#0a2342" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M25 23.75H36.25V35" stroke="#0a2342" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </g>
 </svg>
