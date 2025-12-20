@@ -5607,14 +5607,32 @@ div#single_blogs_standard .youtubevideo-player.youtube_blogs_video,
     padding-bottom: 40px;
     border-bottom: 2px solid rgb(255 255 255 / 10%);
 }
+.footer_upper_big_text.sec_padding {
+    padding: 70px 0 40px;
+}
 .footer_bottom_area,
 .get_touch_info_bottom>p,
 .coming_soon_title_area h2,
 .comment_info>p {
     padding: 20px 0px;
 }
+.footer_logo_area {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.footer_logo_area .footer_logo img {
+    width: 120px;
+    max-width: 100%;
+    margin: 0 auto;
+}
 .footer_logo_area p {
-    width: 410px;
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    text-align: center;
 }
 ul.footer_social_icon {
     display: flex;
