@@ -1905,17 +1905,42 @@ div#header_theme_1 .header_sec.sticky .header_area ul.custome_dropdown,
 div#header_theme_1 .header_sec.sticky .header_area div.custome_dropdown {
     top: 112%;
 }
-.about-page #header_theme_1 .header_sec.sticky .header_area {
+.about-page #header_theme_1 .header_sec.sticky .header_area,
+.landing-page #header_theme_1 .header_sec.sticky .header_area,
+.faq-page #header_theme_1 .header_sec.sticky .header_area,
+.event-page #header_theme_1 .header_sec.sticky .header_area,
+.blog-page #header_theme_1 .header_sec.sticky .header_area,
+.contact-page #header_theme_1 .header_sec.sticky .header_area {
     padding: 4px 0;
 }
 .about-page #header_theme_1 .header_sec.sticky .header_area ul.custome_dropdown,
-.about-page #header_theme_1 .header_sec.sticky .header_area div.custome_dropdown {
+.about-page #header_theme_1 .header_sec.sticky .header_area div.custome_dropdown,
+.landing-page #header_theme_1 .header_sec.sticky .header_area ul.custome_dropdown,
+.landing-page #header_theme_1 .header_sec.sticky .header_area div.custome_dropdown,
+.faq-page #header_theme_1 .header_sec.sticky .header_area ul.custome_dropdown,
+.faq-page #header_theme_1 .header_sec.sticky .header_area div.custome_dropdown,
+.event-page #header_theme_1 .header_sec.sticky .header_area ul.custome_dropdown,
+.event-page #header_theme_1 .header_sec.sticky .header_area div.custome_dropdown,
+.blog-page #header_theme_1 .header_sec.sticky .header_area ul.custome_dropdown,
+.blog-page #header_theme_1 .header_sec.sticky .header_area div.custome_dropdown,
+.contact-page #header_theme_1 .header_sec.sticky .header_area ul.custome_dropdown,
+.contact-page #header_theme_1 .header_sec.sticky .header_area div.custome_dropdown {
     top: 98%;
 }
-.about-page #header_theme_1 .header_sec.sticky .header_logo img {
+.about-page #header_theme_1 .header_sec.sticky .header_logo img,
+.landing-page #header_theme_1 .header_sec.sticky .header_logo img,
+.faq-page #header_theme_1 .header_sec.sticky .header_logo img,
+.event-page #header_theme_1 .header_sec.sticky .header_logo img,
+.blog-page #header_theme_1 .header_sec.sticky .header_logo img,
+.contact-page #header_theme_1 .header_sec.sticky .header_logo img {
     max-height: 72px;
 }
-.about-page #header_theme_1 .header_sec.sticky ul.dasktop_navlist>li.nav-items>a {
+.about-page #header_theme_1 .header_sec.sticky ul.dasktop_navlist>li.nav-items>a,
+.landing-page #header_theme_1 .header_sec.sticky ul.dasktop_navlist>li.nav-items>a,
+.faq-page #header_theme_1 .header_sec.sticky ul.dasktop_navlist>li.nav-items>a,
+.event-page #header_theme_1 .header_sec.sticky ul.dasktop_navlist>li.nav-items>a,
+.blog-page #header_theme_1 .header_sec.sticky ul.dasktop_navlist>li.nav-items>a,
+.contact-page #header_theme_1 .header_sec.sticky ul.dasktop_navlist>li.nav-items>a {
     padding: 18px 22px;
 }
 .landing-page #header_theme_1 .header_sec.sticky .header_area {
