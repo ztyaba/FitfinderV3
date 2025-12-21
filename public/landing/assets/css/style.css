@@ -1918,6 +1918,19 @@ div#header_theme_1 .header_sec.sticky .header_area div.custome_dropdown {
 .about-page #header_theme_1 .header_sec.sticky ul.dasktop_navlist>li.nav-items>a {
     padding: 18px 22px;
 }
+.landing-page #header_theme_1 .header_sec.sticky .header_area {
+    padding: 4px 0;
+}
+.landing-page #header_theme_1 .header_sec.sticky .header_area ul.custome_dropdown,
+.landing-page #header_theme_1 .header_sec.sticky .header_area div.custome_dropdown {
+    top: 98%;
+}
+.landing-page #header_theme_1 .header_sec.sticky .header_logo img {
+    max-height: 72px;
+}
+.landing-page #header_theme_1 .header_sec.sticky ul.dasktop_navlist>li.nav-items>a {
+    padding: 18px 22px;
+}
 .custome_sidebar_upper {
     display: flex;
     align-items: center;
